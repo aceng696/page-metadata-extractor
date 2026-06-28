@@ -1,3 +1,0 @@
-import {Actor} from "apify";import {CheerioCrawler,Dataset} from "crawlee";
-await Actor.init();const input=await Actor.getInput();
-const c=new CheerioCrawler({maxRequestsPerCrawl:1,requestHandler:async({$,request,response})=>{await Dataset.pushData({url:request.url,statusCode:response?.statusCode||null,title:$("title").text().trim(),description:$("meta[name=description]").attr("content"),ogImage:$("meta[property=og:image]").attr("content"),favicon:$("link[rel=icon]").attr("href")||`${new URL(request.url).origin}/favicon.ico`,wordCount:$("body").text().trim().split(/\s+/).length,scrapedAt:new Date().toISOString()})}});await c.run([input.url]);await Actor.exit();
