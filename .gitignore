@@ -1,5 +1,0 @@
-node_modules/
-.apify/
-.apify/output/
-.DS_Store
-*.log
