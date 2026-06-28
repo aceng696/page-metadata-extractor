@@ -1,0 +1,1 @@
+{"actorSpecification":1,"name":"page-metadata-extractor","title":"Page Metadata Extractor","description":"Extract metadata (title, description, OG tags, favicon) from any webpage URL.","version":"1.0.0","buildTag":"latest","input":"./input_schema.json","dockerfile":"./Dockerfile"}
