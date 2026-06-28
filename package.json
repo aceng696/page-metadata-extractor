@@ -1,0 +1,15 @@
+{
+  "name": "page-metadata-extractor",
+  "version": "1.0.0",
+  "description": "Extract metadata (title, description, OG tags, favicon) from any webpage URL",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node src/test.js"
+  },
+  "dependencies": {
+    "apify": "^3.2.0",
+    "crawlee": "^3.10.0"
+  }
+}
